@@ -1,0 +1,22 @@
+*Windows*
+
+:sp (Ctrl-W s) - split horizontally
+:vs (Ctrl-W v) - split vertically
+
+:sp/:vp #n - split with #buffer
+:sp/:vp file-name - split with filename
+
+Ctrl-W w - tab between windows
+Ctrl-W h/j/k/l - move between windows
+Ctrl-W c - close
+Ctrl-W o - close all but current
+
+Ctrl-W +/- - height
+Ctrl-W _ - maximaize height
+Ctrl-W >/< - width
+Ctrl-W | - maximaize width
+Ctrl-W = - equal size all windows
+
+:ba - open all windows from buffer
+
+:windo [command] - do the command in all opened windows

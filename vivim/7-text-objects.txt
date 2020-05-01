@@ -1,0 +1,28 @@
+*Text Objects*
+
+{command}{motion}{type} - make something with textnode (text object)
+
+daw - delete all word (or delete a word with whitespace)
+diw - delete inner word (without whitespace)
+
+So every next command will contain d/c/y, a/i, and different type (separator)
+You can pull out data (copy or delete) from (), "", '', <> etc
+
+as/is - delete sentence (period is a separator)
+ap/ip - delete paragraph (empty line is a separator)
+
+ib or i( or i) - delete everything inside parentheses
+iB or i{ or i} - delete everything inside curly braces
+
+i< or i> - inside <>
+i[ or i] - inside []
+i', i"
+
+at/it - remove a tag (with all nested stuff)/remove tag's children
+
+"nyi< - copy to n register inner text of <>
+dat - delete tag entirely
+diB + k + J - delete inside {}, cursor up, join two rows
+dap - delete entire paragraph
+"syas - copy the sentence to the s register
+

@@ -1,0 +1,32 @@
+*Cut copy paste*
+
+d - cut/delete
+y - yank/copy
+p - put/paste
+cut-copy-paste = delete-yank-put
+
+dd - delete line with \n
+D - delete to the end of line from cursor without \n
+yy - copy line with \n
+Y - copy line without \n
+
+:reg - list of all registers
+:reg n nm - get specific registers
+"" - unnamed register
+"0 - "1, "a - "z  - named registers
+
+"0 - yank register
+"1 - "9 - delete registers, they will stack, "1 - the last deleted item
+
+"ayy - copy line in "a register
+2"bdw - delete 2 words into register "b
+"Ayw - append a word to register "a
+
+"_dw - delete a word into blackhole (without storing in any register)
+
+p - put after cursor
+P - put into cursor
+
+ddp - move line below
+xp - move character to the right
+

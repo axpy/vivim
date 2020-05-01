@@ -1,0 +1,26 @@
+*Vim Settings*
+
+vim settings file lays in ~/.vimrc
+create one if not exists
+
+:opt (:options) - list of all available to set
+
+:h 'option' - check info for setting option
+
+it'll read that files and Run each Commands on every system start
+
+set -> :set any option like (hls, number...)
+map -> map keys
+
+map <character> <command> - map specific character with following command:
+map <F2> <ESC>GA - on F2 press - exit any mode, go to bottom of file, place cursor in the end
+map <C-i> 0i - on Ctrl+i press - place cursor at very beginning of line, then insert mode
+
+<leader> - is by default \ char, which is ofter used for custom mappings:
+map \n o<ESC> - by '\n' will create new line below and exit mode
+
+let mapleader="," - remap leader char to "," // this line should go before any <leader> mappings
+
+vmap, nmap, imap - only specific mode mapping
+
+:source ~/.vimrc - load settings immediately from file (in this example from ~/.vimrc)

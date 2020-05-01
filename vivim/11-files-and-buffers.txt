@@ -1,0 +1,22 @@
+*Files and buffers*
+
+vim a.txt b.txt ... - open multiple files at once (put them in buffer)
+:e filename - open file inside vim window
+
+:buffer (:ls) - check list of buffered files
+:b n - open buffered file
+
+:bp (:bprevious)
+:bn (:bprevious)
+:bf (:bfirst)
+:bl (:blast)
+
+Ctrl + ^ - alt-tab
+
+:qall, :wall - quit, write all
+:badd - add file to buffer
+:bd - delete from buffer
+:%bd - delete all
+
+:E - expolrer buffer
+:bufdo [command] - do command in all buffers

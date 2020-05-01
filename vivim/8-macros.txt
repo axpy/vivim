@@ -1,0 +1,24 @@
+*Macros*
+
+q + register - start recording macro (qa, q1)
+q + register uppercase - append macro commands to existing one
+@ + register - run macro
+@ + @ - run recently executed macro
+
+.,$ normal @register - repeat macro @register for lines from '.' to '$' (10,25 normal @a)
+
+d + /delete-to-term - delete to `delete-to-term`
+
+"register p - paste data of macro to see/modify
+"register C - update register macro
+
+Ctrl-v + ENTER/Escape... - to insert special carrot (^M, ^[...) symbols inside for macro)
+
+E.g you've wrote the macro: "dditdat"dPF@xf< at @q register
+But you forgot to add blank line in the end
+You can append macro by @Q i
+Or paste @q macro somewhere by "qp
+then add - "dditdat"dPF@xf<i
+and finally paste inside q register new macro - 0"qC
+
+let @d = 'ITODO: j' - macro for .vimrc

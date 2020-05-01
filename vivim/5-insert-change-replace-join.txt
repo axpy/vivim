@@ -1,0 +1,32 @@
+*Insert Change Replace Join*
+
+i - insert mode
+I - go to line start and insert mode (0 + i)
+a - append. move cursor right and insert mode (l + i)
+A - append to the line. move cursor to the end of line (end + 1 symbol), insert mode ($ + a)
+
+o - create line below and i (A + enter)
+O - create line above and i (k + i + enter)
+
+nX - make n multiple X operations, followed by typed text and returning to normal mode.
+ni - make n inserts (e.g 5i + * + esc will create *****)
+no,nO - make n new lines with text 
+
+R - replacing mode
+r + char - replace single character
+
+c + motion - delete motion (word, line, n chars) and i (almost like d + w + i)
+cc - delete whole line and i
+C - delete from cursor to the end of line and i
+
+~ - toggle upper/lower case of character
+g + ~ + motion - toggle text by  motion
+g + ~ + ~ - toggle whole line (same as g~$)
+g + U + motion - make uppercase by motion
+g + U + U - make uppercase whole line (same as gU$)
+g + u + motion - make lowecase by motion
+g + u + u - make lowercase whole line (same as gu$)
+
+J - join line below to the current with space between (if current ends by . - it will separate with 2 spaces)
+g + J - join line below to the current without separator
+

@@ -1,0 +1,9 @@
+*Help*
+
+:help or :h - get help;
+:h [topic] - get help for specific item, e.g :wq, w, Ctrl-f;
+^b == Ctrl-b
+Ctrl-] - go to definition of word under the cursor
+Ctrl-o - return to previous position
+Ctrl-w-w - switch between help & working windows;
+

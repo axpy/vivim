@@ -1,0 +1,42 @@
+*Search Find Replace*
+
+f + char - find next char occurance (forward)
+F + char - find previous char occurance
+; - repeat search as next
+, - repeat search as previous
+
+t + char - move cursor before next char (till)
+T + char - reverse t + char
+
+command + f/t + char - make command forward/till next char occurance (e.g dtB delete till char B)
+
+/ + 'text' - search for next text occurance in whole file
+? + 'text' - search for previous text occurance in whole file
+
+n - next occurrance
+N - previous occurrance
+
+:set is / nois - set/unset incremental search
+:set is? - check current search mode
+Incremental search - highlight but don't touch cursos before enter
+ 
+:set hls / nohls - set/unset highlight search
+:set hls? - check current highligt search mode
+Highlight search - highlight all occurances, remove them after :nohls 
+
+* - go to next occurance under cursor/closest to cursor
+# - go to previous
+
+command + [/text, *, etc] - delete/copy to next occurance
+
+:[range]s/old/new/[flags] - code for replacing text, e.g 
+:5s/a/b/g - replace all occurances of a by b on 5th line
+:/Some line/s/is/isn't - replace first occurance of 'is' by 'isn't' on a line with 'Some line'
+:/kek/,$s/kek/lol/g - replace all kek by lol from first kek appearence to the end of file
+
+single line-range is a line number ($ - last line, . - current), /Pattern/
+multiple line-range is divided by , e.g 1,2 or /Global/,$ (% - whole file)
+:s#/some/page#/other/#g - replace / by # for patterns including backslash
+
+:set nu / nonu / nu! - set/unset numbers, ! as for toggle mode
+

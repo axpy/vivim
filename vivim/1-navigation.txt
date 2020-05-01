@@ -1,0 +1,20 @@
+*Navigation*
+
+h - left
+j - down
+k - up
+l - right
+
+Ctrl + f - page down
+Ctrl + b - page up
+
+w - go by next word (incuding any punctuation signs)
+b - go by previous word (including any punctuation signs)
+W - go by next word (only by spaces)
+B - go by previous word (only by spaces)
+
+1gg or gg - go to the top of file (1st line)
+$G or G - go to the last line
+
+10gg, ngg or 10G, nG - go to n line
+

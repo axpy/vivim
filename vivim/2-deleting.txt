@@ -1,0 +1,25 @@
+*Deleting*
+
+x - delete/cut single character under cursor
+x - delete and X - backspace
+u - undo
+Ctrl + r - redo
+
+d - delete operator, combine it with motion, e.g
+dw - delete next word
+db - delete prev word
+dl - delete next char (x - is an alias for dl)
+
+3dw - three times delete next word (same as d3w which is delete three next words)
+d30 - delete up to 30th line (including)
+
+dd - delete/cut line
+p - paste
+
+A - go to the end of line and turn insert mode
+a - move cursor right and turn insert mode
+E - go to the end of word (separated by space)
+e - go to the end of word (separated by any specific characeter)
+
+. - repeat previous command
+

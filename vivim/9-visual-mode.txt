@@ -1,0 +1,29 @@
+*Visual mode*
+
+v - character-wise visual mode
+V - line-wise visual mode
+ctlr + v - block-wise visual mode
+
+~ - Switch case
+c - Change
+d - Delete
+y - Yank
+r - Replace
+x - Delete
+I - Insert (i not working)
+A - Append (a not working)
+J - Join (j not working)
+u - Make lowercase
+U - Make uppercase
+> - Shift right
+< - Shift left
+
+ip, aw, as... can be selected
+
+o - change cursor direction
+O - change top/left cursor direction on block-wise visual
+
+gv - reselect previous selection
+
+I or A in block-wise visual will add text on each selected line
+
