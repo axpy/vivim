@@ -1,0 +1,822 @@
+{
+  "homepage": {
+    "head": {
+      "title": "Regula的移動數據捕獲和文本識別SDK",
+      "description": "Regula提供了用於文檔數據捕獲和文本識別的OCR SDK。 隨時隨地掃描身份證，護照和駕駛執照。 在任何設備上免費試用！"
+    },
+    "buttons": {
+      "view_all": "查看全部",
+      "send": "發送",
+      "submit": "确认",
+      "find_out_more": "了解更多",
+      "contact_us": "联系我们",
+      "back_to_main_page": "返回主頁",
+      "back_to_form": "Back to form"
+    },
+    "success_label": {
+      "thanks": "謝謝啦!",
+      "contact_form_success_label": "We appreciate that you’ve taken the time to write us. We’ll get back to you very soon."
+    },
+    "error_label": {
+      "error": "Error!",
+      "contact_form_error_label": "Sorry, something went wrong..."
+    },
+    "header": {
+      "nav": {
+        "apps": "应用程序",
+        "use_cases": "用例",
+        "solutions": " 解决方案",
+        "for_developers": "对于开发人员",
+        "reviews": "评论"
+      },
+      "controls": {
+        "cta": "保持联系"
+      }
+    },
+    "try_it": {
+      "web_api": "Web API Demo",
+      "header": "立即在任何设备上尝试!",
+      "get_app": "下載這個軟件",
+      "SDK": "SDK",
+      "mobile_app": "移动应用程序",
+      "try_now": "立即嘗試"
+    },
+    "welcome_screen": {
+      "header_part_1": "根据",
+      "header_part_2": "Regula",
+      "header_part_3": "来读取和验证身份证件。",
+      "sub_header": "使您的移动和Web应用程序能够处理身份证，驾驶执照和护照。",
+      "scroll": "scroll",
+      "try_for_free": "立即免费试用"
+    },
+    "use_cases": {
+      "title": "用例",
+      "data_entry_automation": {
+        "title": "数据输入自动化",
+        "description":{
+          "text_1": "创建用户友好的工作流程，以提供更好，更高效的服务。 从身份证件中提取数据并自动，",
+          "link": "轻松地 填写在线表格",
+          "text_2": "。"
+        }
+      },
+      "customer_onboarding": {
+        "title": "客户入职",
+        "description": "简化入职流程，并确保无缝的用户体验。 迅速而有效地启动客户。"
+      },
+      "kyc_automation": {
+        "title": "KYC自动化",
+        "description": "创建自己的量身定制的内部KYC，以符合监管机构的要求。"
+      },
+      "fraud_prevention": {
+        "title": "预防诈骗",
+        "description": "电脑视觉和机器学习被融合在一起以实时验证身份证。 确保您的客户确实是他们声称的真实身份。"
+      },
+      "automated_check-in": {
+        "title": "自动办理登机手续",
+        "description": "借助智能数据输入解决方案，将疲惫的旅行安排转变为愉快的客户旅程。 帮助您的客户迅速注册，避免手动输入并防止拼写错误。"
+      }
+    },
+    "solutions": {
+      "title": "解决方案",
+      "reading_and_verification": "阅读和验证",
+      "authentication": "查验",
+      "coming_soon": "即将推出",
+      "mrz_reading": {
+        "title": "机读区阅读",
+        "description": "立即，准确地从任何护照，身份证，签证和其他证件的机读区（MRZ）捕获数据。"
+      },
+      "barcode_reading": {
+        "title": "条形码阅读",
+        "description": "解码各种1D和2D条形码格式，例如PDF417，二维码和Aztec码。"
+      },
+      "document_type_identification": {
+        "title": "证件类型识别",
+        "description": "自动确定证件发行国家，类型和系列号。" 
+      },
+      "ocr": {
+        "title": "OCR",
+        "title_2": "Visual and textual data OCR",
+        "description": "从任何身份证件中提取数据。 从任何地方提取文本数据。 自动地。"
+      },
+      "data_verification": {
+        "title": "数据验证",
+        "description": "交叉检查并验证从证件中读取的所有数据并执行词法分析。"
+      },
+      "credit_cards_reading": {
+        "title": "信用卡阅读",
+        "title_2": "Credit card reading",
+        "description": "从借记卡/信用卡中获取卡号，持卡人姓名，有效期。" 
+      },
+      "org_and_beyond": {
+        "title": "OCR",
+        "description": ""
+      },
+      "hardware-assisted_authentication": {
+        "title": "硬件辅助查验",
+        "description": "检测身份证件中的不可见安全功能，例如紫外线（UV）图案。"
+      },
+      "face_recognition": {
+        "title": "人脸识别",
+        "description": "通过照片在数据库/列表中找到该人（1：N）。"
+      },
+      "identity_document_authentication": {
+        "title": "身份证件查验",
+        "description": "检查身份证件中的可见安全性功能，以确定其是否真实有效。"
+      },
+      "face_matching": {
+        "title": "人脸匹配",
+        "description": "将持有身份证的人与身份证件中所描绘的人（1：1）进行比较。"
+      },
+      "electronic_document_authentication": {
+        "title": "电子证件查验",
+        "title_2": "E-document reading",
+        "description": "通过NFC从内置于电子证件（ePassport，eID和eDL）中的RFID芯片中读取数据，并执行所有必需的身份验证（CA，AA，TA，PA）。 BSI认证。"
+      },
+      "liveness_detection": {
+        "title": "活力检测",
+        "description": "使用用户智能手机拍摄的自拍照执行活着检查。"
+      }
+    },
+    "industries": {
+      "title": "产业领域",
+      "sub_header_part_1": "找不到您的行业？",
+      "sub_header_part_2": "我们将找到解决方案！",
+      "fintech_and_banking": {
+        "title": "金融科技与银行业务",
+        "description": "我们的解决方案将帮助您遵守全球和本地监管机构的KYC和AML要求。"
+      },
+      "travel_and_hospitality": {
+        "title": "旅游和款待",
+        "description": {
+          "text": "减少在酒店前登机手续的等待时间。 ",
+          "link": "由于数据输入自动化",
+          "text_2": "，可以加快旅行社的客户注册程序。"
+        }
+      },
+      "telcos": {
+        "title": "电信公司",
+        "description": "简化客户的入职旅程，并保持电信公司的高安全性。"
+      },
+      "insurance": {
+        "title": "保险",
+        "description": "及时有效地提供保险服务，消除错别字。"
+      },
+      "education": {
+        "title": "教育",
+        "description": "加快学院，大学，研究机构中证件驱动的流程。"
+      },
+      "entertainment": {
+        "title": "娱乐",
+        "description": "快速简便地进行KYC身份验证（例如，检查客户的年龄）。 合法提供您的服务，确保合规。"
+      },
+      "healthcare": {
+        "title": "医疗卫生",
+        "description": "优化健康信息管理和医疗机构中患者注册的质量。"
+      },
+      "aviation": {
+        "title": "航空",
+        "description": "确保乘客在网上值机过程中或在机场时不会错字姓名和证件号码。"
+      },
+      "government_and_security": {
+        "title": "政府与安全",
+        "description": "处理公民的证件，并确保他们能够立即获得所需的服务。 提高巡逻，边境和检查站身份证件验证的效率"
+      }
+    },
+    "clients": {
+      "title": "我们的客户",
+      "join_industry": "加入行业领袖"
+    },
+    "reviews": {
+      "view_more": "更多",
+      "view_less": "少看",
+      "main_card": {
+        "header": "评论",
+        "text": "We are trusted by out clients",
+        "footer": "阅读所有评论"
+      },
+      "pegasus_airlines": {
+        "footer": "Pegasus Airlines",
+        "text": "At Pegasus Airlines our number one priority is to ensure our passengers have the very best customer experience. Working with Regula and their understanding of this market, coupled with their software knowledge helps us to achieve this from the 1st step of the passenger’s journey."
+      },
+      "iata": {
+        "footer": "IATA",
+        "text": "IATA Timatic Mobile was our first foray into utilising mobile technologies for travel document scanning. After extensive market research with many potential suppliers we chose Regula. Working with Regula enabled us to equip our mobile app with Regula Document Reader SDK to provide swift and secure document checking services to airlines, ground handling and security agents. Their superior technology and flexible approach was critical, and was the difference between success and failure."
+      },
+      "allen_daniel": {
+        "footer": "Allen Daniel",
+        "text": "The city of southern California, san diego is locally known as ‘America’s Finest City’. It’s located on San Diego Bay, an inlet of the Pacific Ocean near the Mexican border. San Diego is the second largest city in California and the seventh largest in the United States. It is also nicknamed as ‘America’s biggest small town’.The beautiful city of san diego ca is well known for its wide selection of cuisines, expensive shopping malls, excellent architecture, museums, san diego zoo and animal parks.San Diego is also dubbed as ‘The Plymouth of West’. It has a scenic coastline and it’s famous for its temperate climate and numerous romantic beaches.San Diego is also known as the ‘City in Motion’ for being a major port of entry and a commercial, industrial, and research center. It is the home to various military facilities including Navy ports, Marine bases, and Coast Guard stations.San Diego is also a city located in Texas. San Diego California is an excellent place for touring, as it’s bit expensive city, planning is very important in taking san diego vacation or san diego vacation packages.It’s always wise to map out the place one is visiting in advance. Get complete information on san diego real estate, san diego hotel and san diego vacation rentals, before visiting San Diego. Onlypunjab.com is the website that can facilitate you pick the best vacation rentals in San Diego. It’ll be providing you the valuable info and the best tips on taking san diego vacation, san diego vacation rental and san diego vacation packages."
+      },
+      "air_asia": {
+        "footer": "AirAsia",
+        "text": "As part of the AirAsia 3.0 plan in digitalizing the airline, we aim to provide a seamless travel process for our guests. The solution provided by Regula greatly complements our overall vision. Regula is always at hand to support us promptly whenever service is needed."
+      },
+      "tui": {
+        "footer": "TUI",
+        "text": "Working with Regula is great! None of the questions remain uncovered, all the documentation is comprehensive. Besides, the company has an attractive price range. We express special gratitude to the customer department, which always makes sure everything goes well on our side and asks if we need any help. Thank you for the fruitful cooperation!"
+      },
+      "freedom_finance_insurance": {
+        "footer": "Freedom Finance Insurance",
+        "text": "Regula appeared to be the best solution for Freedom Finance Insurance needs! The solution helps to eliminate typos and decreases document processing time. Service support is prompt and accurate."
+      },
+      "lycamobile": {
+        "footer": "Lycamobile",
+        "text": "No more typos & quick registration - we’re glad our subscribers don’t have to fulfill manually the required registration fields anymore. The onboarding process is going smoother and quicker with Regula."
+      },
+      "friendi": {
+        "footer": "Friendi",
+        "text": "We used Regula to support us in the challenging task of migrating thousands of our customers to the new network. The tool was very reliable and delivered as per the expectations. We are using Regula SDK for activating new customers, network portability, sim change, and many other operations. Our team is relying on the Regula tool in many of our processes and this has resulted in disabling the manual editing of the readings since it is not required anymore."
+      },
+      "covida": {
+        "footer": "COVIDA.app",
+        "link": "I would like to thanks Regula",
+        "text": " for supporting COVIDA iniative and letting us use their technology for verifying the volunteers participating in the national network in order to support vulnerable elderly people. Thanks a lot for your social responsibility."
+      }
+    },
+    "main_footer": {
+      "products": {
+        "title": "Products",
+        "authentication": "Authentication",
+        "biometric_analysis": "Biometric Analysis",
+        "verification": "Verification",
+        "data_ocr": "Data OCR"
+      },
+      "knowledge_base": {
+        "title": "Knowledge Base",
+        "blog": "Blog",
+        "glossary_of_terms": "Glossary of Terms",
+        "use_cases_by_industry": "Use Cases by Industry",
+        "case_studies": "Case Studies"
+      },
+      "company": {
+        "title": "Company",
+        "about_us": "About Us",
+        "partners": "Partners",
+        "careers": "Careers",
+        "contacts": "Contacts"
+      },
+      "follow_us": {
+        "title": "Follow Us"
+      },
+      "footer": "All rights reserved. Copyright © 1992-2020 Regula."
+    },
+    "contacts": {
+      "title": "Contacts Sale",
+      "or": "或"
+    },
+    "questions": {
+      "title": "还有问题吗？"
+    },
+    "about": {
+      "header": "关于公司",
+      "text_part_1": "Regula 开发软件解决方案并产生用于验证安全证件的司法设备。",
+      "text_part_2": "我们公司赢得了可靠合作伙伴的声誉，并为客户执行了数千项具有挑战性的任务。 我们拥有超过27年的行业经验，并在创新方面处于领先地位，我们正在开发并不断改进针对身份验证市场的解决方案。"
+    }
+  },
+  "form_labels": {
+    "name": "你的名字",
+    "message": "你的信息",
+    "email": "电子邮件"
+  },
+  "validation_errors": {
+    "email": "Incorrect email",
+    "name": "You can use only letters",
+    "message": "You can use only letters",
+    "required": "Please, fill out this field",
+    "invalidField": "Invalid field"
+  },
+  "finance": {
+    "meta": {
+      "meta_title_1": "Regula | Process Automation in the Financial Services Industry",
+      "meta_description_1": "Fast-moving, volatile, exciting; that’s the Fintech world. Discover a solution to process automation in financial services to suit your business.",
+      "meta_title_2": "Process Automation in Financial Services | Regula Document Reader SDK",
+      "meta_description_2": "The Fintech industry is rapidly changing; you need a solution to exceed your customers’ needs. Meet Regula’s solution for process automation in the financial services industry."
+    },
+    "page_start": {
+      "header": "Process Automation in the Financial Services"
+    },
+    "fpa_in_one_click": {
+      "title": "Efficient Financial Process Automation in One Click",
+      "paragraph_1": "Providing a seamless experience to your clients is at the top of your priority list. That’s why you need the right technology to make that happen.",
+      "list": {
+        "title": "With process automation in the financial services industry software, your company can:",
+        "item_1": "Scan and extract data from ID documents in one click",
+        "item_2": "Boost customer satisfaction",
+        "item_3": "Lower the risk of abandonment during onboarding"
+      },
+      "paragraph_2": "Create a tailored solution with Regula Document Reader SDK and comply with regulations, combat fraud, and protect your business."
+    },
+    "finance_use_cases": {
+      "header": "Financial Process Automation Use Cases"
+    },
+    "finance_solutions": {
+      "header": "Solutions for Financial Process Automation"
+    },
+    "what_is_fpa": {
+      "title": "What is Financial Process Automation?",
+      "paragraph_1": "In the financial services industry, strict regulations exist to protect clients and organisations from fraud, money laundering, and other illegal money practices. Delivering security for financial service providers and their clients, such protection comes with a downside – paperwork.",
+      "list": {
+        "title": "Data entry and verification is a time-consuming yet vital task. But it doesn’t have to be. With the right technology, you can automate financial processes to:",
+        "item_1": "Speed up client onboarding",
+        "item_2": "Fill in applications for loans, bank accounts, and other services with ease",
+        "item_3": "Perform essential security checks"
+      },
+      "paragraph_2": "Be compliant. Avoid fraud. Ensure security."
+    },
+    "how_fpa_works": {
+      "title": "How does Financial Process Automation Software Work?",
+      "paragraph": {
+        "part_1": "Financial process automation software allows your business to extract relevant data to complete several key processes relevant to the financial services industry, including ",
+        "link_1": "Know Your Customer",
+        "part_2": " (KYC) regulations, anti-money laundering requirements (AML), ",
+        "link_2": "fraud prevention",
+        "part_3": ", and more."
+      },
+      "list": {
+        "title": "Data entry automation gives your business the power to extract essential data, store it securely, according to GDPR, as well as utilise it efficiently. With Regula Document Reader SDK, you can process:",
+        "passports": {
+          "title": "Passports",
+          "text": "Extract data from passport documents with ease. Scan the image and draw data to allow your company to go on to verify the authenticity and perform fraud checks."
+        },
+        "ids": {
+          "title": "IDs",
+          "text": "Photograph or scan your clients’ official identification document. Use the extracted data to further check its authenticity and perform financial verification tasks."
+        },
+        "other_id_documents": {
+          "title": "Other ID documents",
+          "text": "Swift and efficient data extraction allows your company to detect and extract personal data in seconds."
+        }
+      }
+    },
+    "how_it_works": {
+      "title": "How does it work?",
+      "list": {
+        "item_1": "Data extraction automation software using OCR (optical character recognition) to detect and extract data. It allows companies to optimise processes and easily find documents or customers data within their system.",
+        "item_2": "With an automatically generated database of customer information, delivering your services with excellent customer service becomes easy."
+      }
+    },
+    "financial_processes_automation": {
+      "header": "How can My Business Automate Financial Processes?",
+      "sub_header": "You know your business inside out, but when it comes to integrating new technology, it can be difficult to know where to start and which processes can be optimised. Equipping yourself with financial process automation software, allows you to:",
+      "speed_onboarding": {
+        "title": "Speed up onboarding and avoid abandonment",
+        "paragraph_1": {
+          "part_1": "According to Deloitte, ",
+          "link": "​38% of potential clients fail to complete the onboarding process​.",
+          "part_2": " Don’t let your company be one of them. By using data entry automation, you allow your staff and clients to take control and expedite tedious tasks, like entering personal information, time, and time again."
+        },
+        "paragraph_2": "Whether your client is entering your doors for the first time to open an account, setting up their online banking, applying for a loan, or something else entirely - with Regula Document Reader SDK, taking them through the process from step 1 becomes easier and faster.",
+        "paragraph_3": "In one simple click or upload, data is automatically extracted from their ID and added to your system. With no manual data entry, the risk of human error is low, meaning those tedious identification numbers become a hassle-free task.",
+        "paragraph_4": "With financial process automation software, onboarding becomes a streamlined, speedy process."
+      },
+      "optimise_processes": {
+        "title": "Optimise your business processes",
+        "paragraph_1": "Forget about that time spent manually entering data. Instead, instantly extract personal information from ID documents and then perform further essential financial regulation processes with ease.",
+        "paragraph_2": "With Regula Document Reader SDK, you can optimise vital business processes such as data entry. This allows for more time for your staff to concentrate on more essential matters and perform vital security checks even quicker.",
+        "paragraph_3": "Data can be extracted from documents in seconds, meaning you’ll be able to quickly proceed to those critical KYC, AML, and anti-fraud checks, essential to maintaining security.",
+        "paragraph_4": "Don’t slack on safety, employ the right technology, and you’ll make security an essential part of your business."
+      },
+      "treat_right": {
+        "title": "Treat your customers right",
+        "paragraph_1": {
+          "part_1": "Financial process automation isn’t just about delivering speed and security; it’s about providing your clients with the services they deserve. Involving ",
+          "link": "​the best technology",
+          "part_2": " into your business deliver a loud message to your clients – you care."
+        },
+        "paragraph_2": "The OCR-based technology gives financial providers the power to make accessing services such as statements, account opening, swift, problem-free, and stressless. Meaning you can allocate your staff’s time to more crucial tasks, such as taking care of your clients.",
+        "paragraph_3": "Imagine entering a bank branch, and finding the staff engaging your clients in conversation, buying lasting relationships that will keep them coming back. Or, think about when a customer opens your app and finds that uploading documents is just one photo away, meaning they have time to enjoy that coffee and complete onboarding in peace.",
+        "paragraph_4": {
+          "text": "By enhancing the quality of your services, you’ll be best positioned to outperform your competitors and deliver excellent customer service that boosts retention – a 5% retention increase can lead to a 25% – 95% ",
+          "link": "​increase in profits​."
+        }
+      }
+    },
+    "fpa_in_action": {
+      "header": "Financial Process Automation in Action",
+      "sub_header": "Explore our example uses below to see how financial process automation could look in your company.",
+      "banking": {
+        "title": "Banking",
+        "paragraph_1": {
+          "part_1": "Financial services are increasingly engaging technology to ensure faster customer service, more convenience, and better security. The drive to digitisation means more and more banks are providing their services online and through apps. Statistics show that between 2017 and 2022, ",
+          "link": "​mobile banking transactions are set to rise by 121%",
+          "part_2": ". To stay on top, it’s essential to upgrade your technology to match."
+        },
+        "paragraph_2": "Financial process automation allows your bank to optimise the services provided to your clients and save the time of your staff for more critical tasks.",
+        "paragraph_3": "When your clients first enter your brand or access your online services, they expect swift and efficient customer service. Data extraction technology means that instead of spending time entering their personal details, they’ll be able to scan their ID document and extract valuable information quickly. Avoiding errors and saving time.",
+        "paragraph_4": "With Regula Document Reader SDK, you can delay automation in financial close process, account opening, identity verification in apps and on your site, loan applications, and more."
+      },
+      "fintech": {
+        "title": "Fintech",
+        "paragraph_1": "The financial world has never been more accessible; global financial technology (fintech) companies are gaining steam and providing an ever-increasing range of services from trading to savings to new systems of banking.",
+        "paragraph_2": "But, alongside it comes to a demand for more innovative security measures required to protect customers and financial service providers who sit behind the screens while still delivering fast and efficient service.",
+        "paragraph_3": "Data extract technology allows companies to automate identification processes required for KYC, AML, and fraud protection. By scanning or photographing an ID document, in seconds, data can be extracted, allowing security checks to be carried out.",
+        "paragraph_4": "Such technology negates the need to email, send physical copies of documents, and more, saving your client time and boosting the likelihood that they complete onboarding and use your service."
+      }
+    },
+    "fpa_with_sdk": {
+      "header": "Financial Process Automation with Regula Software Development Kit (SDK)",
+      "sub_header": "With Regula Document Reader SDK, there’s no need to compromise on speed or security. Utilising Regula technology into your company’s native web or mobile app allows you to optimise your processes, staff’s time, and drive client satisfaction with more efficient data entry optimisation. But, how does Regula Document Reader SDK work exactly?",
+      "get_sdk": {
+        "title": "Get Regula Document Reader SDK",
+        "text": "Integrate Regula software into your native web or mobile app, allowing your staff and clients (whichever you choose) to capture and extract information from ID documents instantly."
+      },
+      "use_your_solution": {
+        "title": "Start using your tailored solution",
+        "text": "Once you’ve rolled out your app, all your staff or clients need to do is choose a photo from the gallery, scan an image or take a photograph. The app then extracts essential data using OCR."
+      },
+      "store_and_use_data": {
+        "title": "Store and use data",
+        "text": "Now that you’ve got the information you need; the rest is up to you. Data extracted by Regula Document Reader SDK is securely stored according to GDPR, allowing you to swiftly proceed to those essential security checks equipped with all the data you require."
+      }
+    },
+    "regula_tip": {
+      "text": "Regula Document Reader SDK means your business doesn’t have to choose between speed and security. You get both."
+    },
+    "final_form": {
+      "header": "Discover Regula Document Reader SDK with Web and Mobile Apps",
+      "paragraph_1": {
+        "part_1": "Try out the Regula Document Reader SDK solution and uncover how it can help your financial business to become more secure, compliant, and efficient. Explore the solution for ",
+        "link": "​FREE today using our sample web and mobile apps and",
+        "part_2": "​ see how Regula can solve your financial process automation problems."
+      },
+      "paragraph_2": "Contact us directly and discuss how you can tailor Regular Document Reader SDK and meet your financial process automation needs."
+    }
+  },
+  "data_entry_automation": {
+    "meta": {
+      "meta_title_1": "Data Entry Automation & Data Entry Software by Regula",
+      "meta_description_1": "Discover how to make your data entry automation process easier with data entry software from Regula to boost productivity and efficiency.",
+      "meta_title_2": "Data Entry Automation and Data Entry Software | Regula",
+      "meta_description_2": "Optimize and increase productivity with enhanced data entry automation using the latest data entry software by Regula. Discover the benefits.",
+      "keywords": "data entry automation, data entry software, automate data entry job, data entry apps, data entry software for business, data entry web application, web-based data entry system, data entry automation tool, how to automate data entry"
+    },
+    "page_start": {
+      "header": "Data Entry Automation"
+    },
+    "what_is_dea": {
+      "title": "What is Data Entry Automation?",
+      "paragraph_1": "Ever spent time filling out a form by hand or needlessly repeating the same information on a digital document just to have it marked ‘complete’? You’ll know how time-consuming and stressful the process can be. And your clients feel the same way.",
+      "paragraph_2": "If your business involves data entry, to stay competitive and boost productivity, you’ll need to make sure your processes are optimized.",
+      "paragraph_3": "Data entry automation allows your business or organization to engage state-of-the-art data entry software to automatically fill in the data you require across a variety of formats – registration forms, insurance documents, and much more.",
+      "paragraph_4": "It is the perfect solution for businesses, government organizations, and others, looking to increase workplace productivity by focusing on the tasks that really matter."
+    },
+    "why_you_need_software": {
+      "title": "Why You Need Data Entry Software?",
+      "sub_title": "Adopting data entry software for business allows your organisation to stay ahead of the curve and optimize both internal and customer-focused processes. Here are the top 3 reasons why integrating automated data entry software is essential:",
+      "reduce_wait-time": {
+        "title": "Reduce customer wait-time",
+        "description": "Make sure your customers are not spending any more time than they absolutely have to on bureaucratic processes. Boost satisfaction and ensure your customers’ experience is a positive one."
+      },
+      "create_processes": {
+        "title": "Create more efficient processes",
+        "description": "Streamline internal document processing activities by automating activities that were previously done by hand. Reduce these time-consuming procedures, and your staff will be free to focus on more important tasks."
+      },
+      "maintain_standards": {
+        "title": "Maintain high-security standards",
+        "description": "Rest assured that security remains a high priority, extract and store your data in accordance with the latest GDPR standards and other security markers so that it remains safe."
+      }
+    },
+    "dea_solutions": {
+      "header": "What Solutions Support Data Entry Automation?"
+    },
+    "dea_industries": {
+      "header": "In which Industries is Data Entry Automation Applicable?"
+    },
+    "how_dea_works": {
+      "header": "How Does Data Entry Automation Work?",
+      "sub_header": "By engaging Regula Document Reader SDK, an efficient data entry automation solution tool, your business or organization can improve internal processes, boost customer service, and stay ahead of the competition. But how does it work exactly? When a company integrates our proprietary SDK into their app or web-based data entry system, they are able to scan and recognize a variety of documents to suit their needs. Here’s how it works.",
+      "item_1": "Using the solution, your staff or your client captures the front and back of an identity document using a camera or by choosing an image from the gallery. Text and visual information gets processed through Optical Character Recognition (OCR).",
+      "item_2": "In seconds, checks are performed on the document data and on visual security features – are all fields filled? Is this document one of the accepted types?",
+      "item_3": "Once the swift process has been completed, the data is then transferred to the company’s internal system and becomes available for use."
+    },
+    "documents_kinds": {
+      "header": "Which Kinds of Documents Can Data Entry Software Process?",
+      "sub_header": "Engaging a data entry web application or mobile solution, companies access a variety of data automation possibilities, including:",
+      "identity_documents": {
+        "title": "Identity document verification",
+        "description": "Get the ability to recognize and extract data from a range of ID documents from passports to driving licences to ID cards. Verify almost instantly their authenticity and check for fraud."
+      },
+      "insurance_documents": {
+        "title": "Insurance documents",
+        "description": "Automatically fill in data for insurance claims, taking the hassle out of an already stressful experience for your clients."
+      },
+      "bank_applications": {
+        "title": "Bank applications",
+        "description": "Extract the necessary data for account opening and access, including ID verification and address paperwork, verified quickly and on-the-spot."
+      },
+      "hotel_and_travel": {
+        "title": "Hotel and travel",
+        "description": "Quickly scan passports and boarding passes to ensure top-level security at your travel venue. Verify the data in a matter of seconds for state-of-the-art security."
+      },
+      "barcodes": {
+        "title": "Barcodes",
+        "description": "Speed up your barcode reading process and improve customer service. Whether a shop or concert venue, barcode reading capabilities allow you to detect barcode and ticket fraud without delay."
+      }
+    },
+    "data_entry_in_industry": {
+      "header": "How to Automate Data Entry in your Industry?",
+      "sub_header": "Whether you’re a business, government organization or other, here’s how your organization can implement and automate data entry jobs in the workplace.",
+      "airports": {
+        "title": "Use Case #1 – Airports",
+        "paragraph_1": "The airport and airline travel is a prime area where speed, accuracy, and security matter most. Data entry apps, powered by technology, such as Regula Document Reader SDK, and standalone custom solutions put the power in the hands of airport service providers, security and handlers to deliver a secure and efficient service to travelers.",
+        "paragraph_2": "By incorporating automated data entry into web and mobile apps, airline’s clients can easily register by scanning passports or other ID documents. Meaning that when it comes to purchasing a ticket, all the important data is already stored, ready to be used.",
+        "paragraph_3": "At the airport, automated data entry systems make check-in a breeze by allowing airport staff to scan passports swiftly, giving service providers access the data they need to conduct further security checks and ensure that the right passenger is travelling on the right flight.",
+        "paragraph_4": "The same technology can also be applied in automatic kiosks that scan passports and issue boarding passes, an increasingly convenient feature at many airports, making check-in faster, reducing wait-time and boosting customer satisfaction."
+      },
+      "banking": {
+        "title": "Use Case #2 – Banking",
+        "paragraph_1": "With an increasing drive towards digitization in the financial industry, banks and other financial service providers are feeling the pressure to develop convenient and secure systems for their clients to maintain their position in the world market. And it all starts the moment a client steps through the door.",
+        "paragraph_2": "Client onboarding is the number one step in any bank. This is your first interaction with the client, and it leaves a lasting impression. Having your client stand around, waiting as you enter vital details into the system can be a discouraging experience. Instead, with data entry web applications and mobile apps, you can optimize their wait-time while still performing all necessary security procedures.",
+        "paragraph_3": "Document processing allows your staff to scan documents in seconds, with essential checks being performed almost immediately, keeping client waiting time to a minimum and your systems secure.",
+        "paragraph_4": {
+          "text_1": "Mobile banking transactions are ",
+          "link": "set to rise 121% from 2017 to 2022",
+          "text_2": ". With this in mind, financial institutions are focusing on creating and updating their mobile services to meet the growing need for mobile services. However, security is still the main concern."
+        },
+        "paragraph_5": "To answer this problem, banks are engaging Regula Document Reader SDK to allow clients to automatically open and access their accounts by scanning an ID document, from the comfort of their own homes. It will contribute to cutting down the need for in-branch staff and providing clients with convenience in their banking experience."
+      },
+      "telecom": {
+        "title": "Use Case #3 – Telecom",
+        "paragraph_1": "In an increasingly mobile world, the demand for telecom service providers to deliver swift and practical solutions to customers is rising.",
+        "paragraph_2": "Regula Document Reader SDK gives businesses the opportunity to provide clients with a secure, online app registration process that doesn’t require in-person ID presentation or a slow postal service to confirm identity.",
+        "paragraph_3": {
+          "text_1": "When a customer opens an app and begins the registration process, this is one of the riskiest times in the onboarding process. In the Fintech industry alone, up to ",
+          "link": "38% of potential clients abandon the process",
+          "text_2": " at this stage for a variety of reasons – security, time-consuming, complicacy."
+        },
+        "paragraph_4": "By engaging data automation software, businesses are able to provide their customers with a smooth and secure service. ID verification is as simple as taking a photo. Companies are then able to quickly access this data to verify identity and compliance with any necessary laws, including Know Your Customer (KYC), Anti-Money Laundering (AML) and others. Data is then securely stored, according to GDPR."
+      }
+    },
+    "apps_advantages": {
+      "header": "Advantages of Data Entry Apps",
+      "productivity": {
+        "title": "Productivity",
+        "paragraph_1": "The higher the productivity level of your business, the more profitable and sustainable it will be. Data entry automation allows your staff and users to switch away from routine data entry tasks and focus on your business’ bottom line while reducing stress and workload.",
+        "paragraph_2": {
+          "text_1": "Regula Document Reader SDK puts power in the hands of your employees and users, giving them access to ",
+          "bold_text": "one-second on average document recognition",
+          "text_2": " time that works with amazing accuracy."
+        }
+      },
+      "security": {
+        "title": "Security",
+        "paragraph_1": {
+          "text_1": "Fast doesn’t have to mean compromising on security. Regula Document Reader SDK is a ",
+          "bold_text": "BSI certified module for eID reading",
+          "text_2": ", meaning it competes at the highest level of protection when it comes to your ID verification needs. All data extracted using our proprietary data entry software is able to be stored securely according to the latest ",
+          "bold_text_2": "GDPR"
+        },
+        "paragraph_2": "With the solution, you can ensure your business’ and clients’ security without causing unnecessary work for your staff or customers."
+      },
+      "automation": {
+        "title": "Automation",
+        "paragraph_1": "Manual data entry is time consuming and runs the risk of human error; typing mistakes are frequent and can lead to complications for you and your clients. With automated data entry, your business is able to efficiently and accurately extract the data it needs with ease.",
+        "paragraph_2": "The extracted data is then able to be automatically recognised as a particular document type – passport, ID card, etc. – providing swift service and security at your fingertips."
+      }
+    },
+    "final_form": {
+      "header": "Regula’s FREE Mobile Demo Apps and Web API Demo For Data Entry",
+      "paragraph_1": {
+        "text": "Discover more about how Regula Document Reader SDK works and what it can do for your business with our FREE mobile demo apps and demo web app ",
+        "link": "for data entry."
+      },
+      "paragraph_2": "Get in touch and let us help you create a tailored data entry automation solution to boost your business."
+    }
+  },
+  "mrz_reader": {
+    "meta": {
+      "meta_title_1": "MRZ Reader: The SDK that Will Improve Your Business",
+      "meta_description_1": "Discover how an MRZ reader app can optimise your organisation’s workflow and satisfy your clients.",
+      "meta_title_2": "Improve Your Workflow With Our MRZ Reader | Regula",
+      "meta_description_2": "When customer flow is growing and your staff still enters data manually, it’s time to switch to something more effective. Here’s why an MRZ Reader can help.",
+      "meta_title_3": "​A Perfect Blend: MRZ Scanner SDK and Your App",
+      "meta_description_3": "Enhance your app functions by blending it with a handy MRZ Scanner SDK to quickly capture data form any ID documentation and optimise your business."
+    },
+    "page_start": {
+      "header": "MRZ Reader"
+    },
+    "what_is_mrz": {
+      "title": "What is an MRZ Reader?",
+      "paragraph_1": "Getting to grips with what the name MRZ is and what an MRZ reader does, doesn't have to be complicated. MRZ stands for Machine Readable Zone. It is an international code on travel documents, such as passports, driving licences, and certain ID cards.",
+      "paragraph_2": {
+        "part_1": "MRZ is a useful system for reading and checking document data quickly and efficiently. It is used worldwide and supported by most countries that recognise ",
+        "link": "ICAO Document 9303",
+        "part_2": ". The MRZ contains vital personal information, such as name, date of birth, document ID, and expiration date."
+      },
+      "paragraph_3": "Being able to easily extract this data from identification documents with Regula Document Reader SDK allows you to optimise your organisation’s processes and ensure greater security and efficiency."
+    },
+    "mrz_number": {
+      "title": "What Data is Contained in an MRZ Number?",
+      "paragraph_1": "MRZ contains essential personal information necessary to verify identity. MRZ scanner SDK-based applications allow companies to extract this data, for example, an MRZ passport number.",
+      "paragraph_2": "MRZ passport checkers scan for essential data on specific identity documents; this information can typically be found at the bottom of an identity page in most passports. It consists of 2 or 3 lines of text, written in OCR-B format.",
+      "paragraph_3": "Here’s what an MRZ number example may look like:",
+      "paragraph_4": "P<AUSCITIZEN<<JANE<<<<<<<<<<<<<<<<<<<<<<<<<< U0996738<2UTO7906075F1112256<50013871L<<<<68"
+    },
+    "documents_kinds": {
+      "header": "Which Documents Contain MRZ?",
+      "documents_types": {
+        "title": "The range of documents includes almost all travel documents ",
+        "text_1": "Passports are not the only one’s documents that contain MRZ data.",
+        "text_2": "These are divided by type according to the first letter of the MRZ code:",
+        "passports": {
+          "text": "P — for passports"
+        },
+        "visas": {
+          "text": "V — for visas"
+        },
+        "identity_documents": {
+          "text": "A, C, I — for other identity documents"
+        }
+      },
+      "data_types": {
+        "title": "High fidelity of results recognition",
+        "text_1": "It is vital in verifying identity for travel and security purposes.",
+        "text_2": "Other types of data that are encrypted into MRZ codes include:",
+        "surname": {
+          "text": "Surname;"
+        },
+        "name": {
+          "text": "Name;"
+        },
+        "birth_date": {
+          "text": "Date of birth;"
+        },
+        "citizenship": {
+          "text": "Citizenship;"
+        },
+        "sex": {
+          "text": "Sex;"
+        },
+        "passport_number": {
+          "text": "Passport number;"
+        },
+        "by_whom_issued": {
+          "text": "By whom issued;"
+        },
+        "country": {
+          "text": "Country of origin;"
+        },
+        "document_type": {
+          "text": "Document type;"
+        },
+        "other_data": {
+          "text": "Other data, depending on the country."
+        }
+      }
+    },
+    "business_need_mrz": {
+      "header": "Why Does My Business Need an MRZ Reader?",
+      "paragraph": "MRZ readers help promptly extract information from MRZ codes in travel or identity documents of your customers and then use the information for further purposes.",
+      "list": {
+        "title": "With Regula Document Reader SDK, you can:",
+        "reduce_customer_wait-time": {
+          "title": "Reduce customer waiting time",
+          "description": " MRZ reader captures, decodes, and provides ID data within seconds, considerably speeding up the customer registration process."
+        },
+        "improve_data_accuracy": {
+          "title": "Improve data accuracy",
+          "description": "Improve with data input automation, eliminating manual work that can be time-consuming and prone to human error."
+        }
+      }
+    },
+    "standalone_device_vs_mrz_sdk": {
+      "header": "Standalone Device Vs. MRZ Scanner SDK",
+      "sub_header": "MRZ Scanner SDK is an effective solution to optimise time and efficiency, here’s how a customised MRZ scanner using SDK measures up alongside a standalone MRZ reader device.",
+      "standalone_device": {
+        "title": "Standalone Device",
+        "price": {
+          "title": "Price",
+          "desription": "Can be costly and requires individual equipment"
+        },
+        "availability": {
+          "title": "Availability",
+          "desription": "Device is a fixed size and users are unable to customise without increasing costs"
+        },
+        "integration": {
+          "title": "Integration",
+          "desription": "No"
+        },
+        "internet_connection": {
+          "title": "Internet connection",
+          "desription": "Not required"
+        }
+      },
+      "mrz_sdk": {
+        "title": "MRZ Scanner SDK",
+        "price": {
+          "title": "Price",
+          "desription": "Often less expensive than standalone equipment"
+        },
+        "availability": {
+          "title": "Availability",
+          "desription": "Can be installed on: mobile phones, tablets, self-service kiosks, security entrance systems and others"
+        },
+        "integration": {
+          "title": "Integration",
+          "desription": "Integrates into your apps or utilised software"
+        },
+        "internet_connection": {
+          "title": "Internet connection",
+          "desription": "Not required"
+        }
+      }
+    },
+    "mrz_use": {
+      "header": "How is MRZ Reader used?"
+    },
+    "mrz_industries": {
+      "header": "In which industries is MRZ Reading applicable?"
+    },
+    "why_mrz": {
+      "header": "Why Choose Regula SDK - MRZ Scanner module?",
+      "sub_header": "Regula MRZ Scanner SDK is an efficient solution for businesses that handle fast-flowing streams of customers, large volumes of data, or require security from ID checks. By integrating Regula Document Reader SDK, your business can benefit from:",
+      "heightened_data_security": {
+        "title": "Heightened data security",
+        "description": "Put your clients’ data security first. Their personal information is securely stored in line with the highest standard of data security and GDPR."
+      },
+      "improved_automation": {
+        "title": "Improved automation",
+        "description": "Reduces the time spent on manual data entry. Optimise your workflow and maximise client satisfaction by automatically processing with the MRZ software."
+      },
+      "increased_accuracy": {
+        "title": "Increased accuracy",
+        "description": "Avoid errors with accurate data extraction. Reduce the risk of typographical errors that can cause identification issues down the line."
+      },
+      "get_data_verification": {
+        "title": "Get to data verification faster",
+        "description": "Accurately extracted data allows you to progress to verification swiftly. Get the data you need in one-click, and use it to make those all-important checks even faster."
+      },
+      "seamless_usability": {
+        "title": "Seamless usability",
+        "description": "Added complications cost time and money. MRZ scanner SDK allows you to build a solution that suits your business. Create a simple, user-friendly and intuitive interface to extract data in seconds."
+      },
+      "simplicity_and_autonomy": {
+        "title": "Simplicity and autonomy",
+        "description": "Regula Document Reader SDK doesn’t require an internet connection for document scanning, allowing you to extract essential data anywhere, anytime."
+      },
+      "multi-platform_integration": {
+        "title": "Multi-platform integration",
+        "description": "Available for iOS or Android platforms, meaning that your software solution will work no matter what system your workers or clients use. It’s also available for web, making it a truly universal solution."
+      }
+    },
+    "how_use_mrz": {
+      "header": "How MRZ Reading Works",
+      "sub_header": "Once your company has developed their own mobile MRZ scanner for Android or iOS, or web application, using Regula Document Reader SDK, employing the solution to your business is as easy as 1, 2, 3.",
+      "download_the_app": {
+        "title": "Download the app to your device – computer, phone or tablet.",
+        "description": "The app can be used directly by your clients or staff, depending on which solution you choose, to optimise your workflow."
+      },
+      "take_a_photo": {
+        "title": "Place your document in front of your device’s camera, making sure the MRZ code is visible and hit “take a photo”.",
+        "description": "Your document will be automatically scanned and essential MRZ data extracted, all in one-click."
+      },
+      "mrz_information": {
+        "title": "MRZ information is automatically extracted and becomes securely stored in your system.",
+        "description": "This data can be further used to verify the document, for security checks, KYC verification and more."
+      }
+    },
+    "mrz_for_industry": {
+      "header": "MRZ Reading Solutions for Your Industry",
+      "airport_security": {
+        "title": "Airport Security",
+        "list_title": "Thousands of people choose airline travel daily, undergoing ID checking procedures when boarding and getting off the plane. Implementation of MRZ scanners in airport and airline routine can greatly improve their performance by:",
+        "cut_queues": {
+          "title": "Cutting queues and reducing customer wait time.",
+          "description": " By incorporating an MRZ scanning system and training your staff how to use it, you drastically cut down passenger waiting time, increasing customer satisfaction."
+        },
+        "increasing_passenge_flow": {
+          "title": "Increasing the passenger registration flow.",
+          "description": " By establishing automatic kiosks in the airport with the passport and ID scanning function for faster check-ins. Customers can check themselves in and optimise the check-in process.*"
+        },
+        "minimize_human_error": {
+          "title": "Minimize human error.",
+          "description": " Automatic data extraction from an ID document reduces the risk of misprints and spelling errors while extracting full information from MRZ codes, increasing the speed and accuracy of data entry.*"
+        },
+        "encourage_passenger_autonomy": {
+          "title": "Encourage passenger autonomy.",
+          "description": " Integrate an MRZ scanner software into an airline’s app and provide your clients with the opportunity to avoid long queues. Passengers simply register for the flight online by just scanning their ID documents."
+        }
+      },
+      "banking_sector": {
+        "title": "Banking Sector",
+        "list_title": "Customer satisfaction and maximum security are the key features of any banking establishment. With Regula Document Reader SDK - MRZ module - you can:",
+        "accelerate_validation_process": {
+          "title": "Accelerate ID data processing",
+          "description": ", reducing customer waiting time. Regula SDK captures and extracts personal data for further processing in seconds, eliminating time-consuming manual input. Avoiding errors and saving time. *"
+        },
+        "prevent_data_leaking": {
+          "title": "Prevent customer personal data leaking.",
+          "description": " Control your data flow by allowing Regula SDK to perform all document processing on your server.  Sensitive data stays within your system."
+        }
+      },
+      "footnote": {
+        "text": "*MRZ scanning system is often combined with visual OCR module and other ",
+        "link": "solutions "
+      }
+    },
+    "final_form": {
+      "header": "Ready to try Regula Regula SDK?",
+      "paragraph_1": "Try our FREE demo app now and let your business benefit from a fast, efficient, and precise Regula Document Reader SDK.",
+      "paragraph_2": "Do you still have questions? Get in touch, and we’ll help you find the optimal solution for your business needs."
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="288px" height="288px" viewBox="0 0 288 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63 (101010) - https://sketch.com -->
+    <title>3A05D4E8-E6BD-4BD7-A1CD-B288A102D5BF</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="51.1932553%" y1="-6.45962848%" x2="50%" y2="98.120777%" id="linearGradient-1">
+            <stop stop-color="#F2F7FA" offset="0%"></stop>
+            <stop stop-color="#DAE6EE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="new-text-19.12" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MRZ-Reader" transform="translate(-81.000000, -176.000000)" fill="url(#linearGradient-1)">
+            <g id="1-main">
+                <g id="bg">
+                    <circle id="Oval" cx="225" cy="320" r="144"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

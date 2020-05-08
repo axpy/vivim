@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="63" viewBox="0 0 160 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="142" y="32" width="15" height="22" fill="#D0D3DD"/>
+<rect x="138.85" y="25.8537" width="20.3" height="36.2925" rx="3.15" stroke="black" stroke-width="1.7"/>
+<line x1="138.55" y1="56.7625" x2="160" y2="56.7625" stroke="#222222" stroke-width="1.7"/>
+<line x1="138.55" y1="30.15" x2="160" y2="30.15" stroke="#222222" stroke-width="1.7"/>
+<path d="M150.774 59H147.377C147.169 59 147 59.2202 147 59.4917C147 59.7632 147.169 59.9834 147.377 59.9834H150.774C150.983 59.9834 151.152 59.7632 151.152 59.4917C151.152 59.2202 150.983 59 150.774 59Z" fill="#222222"/>
+<line x1="1" y1="44.15" x2="78" y2="44.15" stroke="#222222" stroke-width="1.7"/>
+<rect x="0.85" y="0.85" width="76.3" height="52.3" rx="3.15" stroke="black" stroke-width="1.7"/>
+<path d="M34.5 53.5V60C34.5 61.1046 35.3954 62 36.5 62H41.5C42.6046 62 43.5 61.1046 43.5 60V53.5" stroke="black" stroke-width="1.7"/>
+<line x1="26.85" y1="62.15" x2="51.15" y2="62.15" stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="11" y="12" width="58" height="25" fill="#D0D3DD"/>
+<rect x="88.85" y="10.85" width="38.3" height="50.3" rx="3.15" stroke="black" stroke-width="1.7"/>
+<line x1="89" y1="55.15" x2="128" y2="55.15" stroke="#222222" stroke-width="1.7"/>
+<path d="M110.862 14H104.686C104.307 14 104 14.3013 104 14.673C104 15.0446 104.307 15.3459 104.686 15.3459H110.862C111.241 15.3459 111.549 15.0446 111.549 14.673C111.549 14.3013 111.241 14 110.862 14Z" fill="#222222"/>
+<rect x="93" y="23" width="30" height="25" fill="#D0D3DD"/>
+</svg>
+

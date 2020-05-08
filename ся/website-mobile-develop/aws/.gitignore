@@ -1,0 +1,10 @@
+# no compiled js
+index.js
+pipedrive-proxy-stack.js
+static-website-stack.js
+cd/cd.js
+
+node_modules/
+src/node_modules/
+*.out/
+*.out
