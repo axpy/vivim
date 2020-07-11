@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>040 Exercise 11 - Vim Settings and the Vimrc File</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Vim Settings and the Vimrc file</p>
+
+<h4><strong><em>Goal:</em></strong></h4>
+
+
+
+<p>The goal of this exercise is to create your own vimrc file with your own desired customizations.</p>
+
+<h4><strong><em>Instructions:</em></strong></h4>
+
+
+
+<h4><strong>Open the sample vimrc file.</strong></h4>
+
+
+
+<p>First, start a command line session on your local machine.  Next, use vim to open the "vimrc-sample" file that came in the course downloads.  To do that, navigate to the location of the file.  Remember this could be different for you depending on where you extracted the contents of the file.  This example assumes the course download was saved into your Downloads folder and extracted from there.</p>
+
+
+
+<table><tbody><tr><td><p>cd Downloads</p><p>cd vimclass</p><p>vim vimrc-sample</p></td></tr></tbody></table>
+
+
+
+
+
+<h4><strong>Try the various options and settings</strong></h4>
+
+
+
+<p>Look through the file and read the comments for each option along the way.  For example, here is the ruler option:</p>
+
+
+
+<table><tbody><tr><td><p>" Show the line and column number of the cursor position</p><p>set ruler</p></td></tr></tbody></table>
+
+
+
+<p>If the option sounds like something you might use, read the help documentation for the command.  When getting help, remember to use single quotes around the option name so you are taken to the option documentation and not some other related documentation.  For example, to get more information about the ruler option type:</p>
+
+
+
+<table><tbody><tr><td><p>:h 'ruler'&lt;ENTER&gt;</p></td></tr></tbody></table>
+
+
+
+<p>If after reading the detailed description of the option and you want to try it, enable with the <strong>set</strong> command.  To enable a boolean option use <strong>set option-name</strong> like so:</p>
+
+
+
+<table><tbody><tr><td><p>:set ruler&lt;ENTER&gt;</p></td></tr></tbody></table>
+
+
+
+<p>To disable the option, use <strong>set nooption-name</strong> like so:</p>
+
+
+
+<table><tbody><tr><td><p>:set noruler&lt;ENTER&gt;</p></td></tr></tbody></table>
+
+
+
+<p>Remember you can use <strong>Ctrl-ww</strong> to switch between the open windows.  If you decide not to use the option, comment it out by prepending a double quotation mark (") to the beginning of the line like so:</p>
+
+
+
+<table><tbody><tr><td><p>" Show the line and column number of the cursor position</p><p>" set ruler</p></td></tr></tbody></table>
+
+
+
+<h4><strong>Save your changes to the vimrc-sample file</strong></h4>
+
+
+
+<p>Save your changes with <strong>:w&lt;ENTER&gt;</strong>.</p>
+
+
+
+<h4><strong>Copy the contents of the vimrc-sample file into a register</strong></h4>
+
+
+
+<p>Now, copy the contents of the vimrc-sample file into a register so you can use it later paste it into your own vimrc file.  Yank it into the <strong>"v</strong> register with <strong>gg"vyG</strong>.  Here is how that command breaks down:</p>
+
+
+
+<p><strong>gg</strong> - positions your cursor at the beginning of the file.</p>
+
+<p><strong>"v</strong> - use the "v register.</p>
+
+<p><strong>yG</strong> - yank the motion G, which is the last line of the file.</p>
+
+
+
+<h4><strong>Create your own vimrc file.</strong></h4>
+
+
+
+<p>The easiest way to open your vimrc file is to first start vim.  If you're following along vim is already running.  From there use the <strong>:e</strong> command.</p>
+
+<h4><strong>Mac, Linux, or Unix Users Only</strong></h4>
+
+
+
+<p>If you're working on a Mac, Linux, or Unix system your vimrc file is named ".vimrc".  To edit it, type <strong>:e ~/.vimrc</strong></p>
+
+
+
+<table><tbody><tr><td><p>:e ~/.vimrc</p></td></tr></tbody></table>
+
+
+
+<p>By the way, the ~ is a shortcut that represents your home directory.  The / is the directory separator and finally .vimrc is the file.  On my Mac, my username is jason and my home directory is /Users/jason.</p>
+
+<h4><strong>Windows Users Only</strong></h4>
+
+
+
+<p>If you're working on a Windows system your vimrc file is named "_vimrc".  To edit it, type <strong>:e ~/_vimrc</strong></p>
+
+
+
+<table><tbody><tr><td><p>:e ~/_vimrc</p></td></tr></tbody></table>
+
+
+
+<p>Even though ~/ is a Unix based convention, it works on windows systems with vim.  By the way, the ~ is a shortcut that represents your home directory.  The / is the directory separator and finally _vimrc is the file.  On my Windows system, my username is jason and my home directory is C:\Users\jason.  In this example ~/_vimrc is actually /Users/jason/_vimrc.</p>
+
+
+
+<h4><strong>Paste the contents of the vimrc-sample file into your vimrc file</strong></h4>
+
+
+
+<p>Use the put command to paste the contents of the vimrc-sample file which was saved into register "v.  Use <strong>"vp</strong> or <strong>"vP</strong>.</p>
+
+
+
+<p>Save your changes with <strong>:w&lt;ENTER&gt;</strong>.</p>
+
+
+
+<h4><strong>Add more customizations if wanted</strong></h4>
+
+
+
+<p>Now you have your very own personalized vimrc file with your preferences.  If you want to explore more options and settings use <strong>:h option-list</strong> and/or <strong>:options</strong>.  Add any more desired customizations to your vimrc file.</p>
+
+
+
+<h4><strong>Save and exit</strong></h4>
+
+
+
+<p>When you are done editing your vimrc file write your changes and quit with <strong>:wq!&lt;ENTER&gt;</strong>.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

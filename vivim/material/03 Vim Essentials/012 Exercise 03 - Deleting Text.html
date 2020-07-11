@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>012 Exercise 03 - Deleting Text</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Deleting Text</p>
+
+<h4><strong><em>Goal:</em></strong></h4>
+
+
+
+<p>The goal of this exercise is to practice deleting text in a file. You'll also practice the [count][operator]{motion} pattern.</p>
+
+<h4><strong><em>Instructions:</em></strong></h4>
+
+
+
+<h4><strong>Open the practicedeleting.txt file</strong></h4>
+
+
+
+<p>First, start a command line session on your local machine.  Next, use vim to open the "practicedeleting.txt" file that came in the course downloads.  To do that, navigate to the location of the file.  Remember this could be different for you depending on where you extracted the contents of the file.  This example assumes the course download was saved into your Downloads folder and extracted from there.</p>
+
+
+
+<table><tbody><tr><td><p>cd Downloads</p><p>cd vimclass</p><p>vim practicedeleting.txt</p></td></tr></tbody></table>
+
+
+
+<h4><strong>Practice deleting individual characters</strong></h4>
+
+
+
+<p>Move to the 3rd line of the file.  Remember, you can do this in a few different ways.  You can press the <strong>j</strong> key until you're there, you can use <strong>3gg</strong>, <strong>3G</strong>, or <strong>:3&lt;ENTER&gt;</strong>.</p>
+
+
+
+<p>Remove the extra "k" in the word "mistakke" by positioning your cursor under one of the additional letters and hit the <strong>x</strong> key.  Here is what the sentence looks like before your edit:</p>
+
+
+
+<table><tbody><tr><td><p>First, fix this spelling mistakke.</p></td></tr></tbody></table>
+
+
+
+<p>Here is what it looks like after:</p>
+
+
+
+<table><tbody><tr><td><p>First, fix this spelling mistake.</p></td></tr></tbody></table>
+
+
+
+<p>Move to the 4th line of the file.  Remove the repeated letters from each of the words.  Use <strong>x</strong> to delete the character under your cursor to do so.   Here is what the sentence looks like before:</p>
+
+
+
+<table><tbody><tr><td><p>Fixx theese allso.</p></td></tr></tbody></table>
+
+
+
+<p>After you delete the additional "x", "e", and "l", it will look like this:</p>
+
+
+
+<table><tbody><tr><td><p>Fix these also.</p></td></tr></tbody></table>
+
+
+
+<p>Move down to the next line:</p>
+
+
+
+<table><tbody><tr><td><p>Delete this text with the X command.</p></td></tr></tbody></table>
+
+
+
+<p>Position your cursor at the end of the line.  You can repeatedly press the <strong>l</strong> key, or if you want to be really efficient you can use the <strong>$</strong> key.  Now delete all the text you can with <strong>X</strong> key.  You'll find that only the period remains on the line:</p>
+
+
+
+<table><tbody><tr><td><p>.</p></td></tr></tbody></table>
+
+
+
+<p>To delete that character, press <strong>x</strong>.  Now the line is empty.</p>
+
+
+
+<h4><strong>Practice deleting motions</strong></h4>
+
+
+
+<p>Move down to the next line:</p>
+
+
+
+<table><tbody><tr><td><p>Who let the dogs out? cats</p></td></tr></tbody></table>
+
+
+
+<p>Position your cursor one character right of the question mark.  Your cursor will be in the space between "?" and "cats".  Delete the remaining text on the line.  You can use <strong>d$</strong>, or an even shorter version of the command <strong>D</strong>.  After your edit, the line will look like the following:</p>
+
+
+
+<table><tbody><tr><td><p>Who let the dogs out?</p></td></tr></tbody></table>
+
+
+
+<p>Now position the cursor at the beginning of line 43.  (Hint: <strong>43gg</strong> works.)  Delete the first word of the line with the <strong>d</strong> operator.  Remember the pattern of [count][operator]{motion}.  To delete that first word you can use <strong>dw</strong> or even <strong>dW</strong>.  Here is the line before the first word is deleted:</p>
+
+
+
+<table><tbody><tr><td><p>Far far away, behind the wild mountains, far from the countries Vokalia and</p></td></tr></tbody></table>
+
+
+
+<p>Here is the line after the first word is deleted:</p>
+
+
+
+<table><tbody><tr><td><p>far away, behind the wild mountains, far from the countries Vokalia and</p></td></tr></tbody></table>
+
+
+
+<p>Delete the second word, too.  Now the line looks like so:</p>
+
+
+
+<table><tbody><tr><td><p>away, behind the wild mountains, far from the countries Vokalia and</p></td></tr></tbody></table>
+
+
+
+<p>Delete the text "away, " with two keystrokes.  Remember that the <strong>w</strong> motion will stop at punctuation while the <strong>W</strong> motion ignores punctuation and stops the cursor after white space.  So, to delete "away, " in two keystrokes you use <strong>dW</strong>.  Now the line looks like this:</p>
+
+
+
+<table><tbody><tr><td><p>behind the wild mountains, far from the countries Vokalia and</p></td></tr></tbody></table>
+
+
+
+<p>Position your cursor at the beginning of the first occurrence of the word "the".  Delete the first word in the sentence using an operator and a motion.  To do that, type <strong>db</strong>.  You could have also used <strong>dB</strong>.  Here is how the line appears now:</p>
+
+
+
+<table><tbody><tr><td><p>the wild mountains, far from the countries Vokalia and</p></td></tr></tbody></table>
+
+
+
+<p>Now, delete words "the wild ".  One way to do this is to use <strong>2dw</strong>.</p>
+
+
+
+<table><tbody><tr><td><p>mountains, far from the countries Vokalia and</p></td></tr></tbody></table>
+
+
+
+<p>Now delete "mountains, far ".  A motion that moves your just past "mountains, far " is <strong>2W</strong>.  So, use <strong>d2W</strong> to delete the text.  This is what remains on the line, now:</p>
+
+
+
+<table><tbody><tr><td><p>from the countries Vokalia and</p></td></tr></tbody></table>
+
+
+
+<h4><strong>Practice deleting lines</strong></h4>
+
+
+
+<p>Delete the line by using <strong>dd</strong>.  Your cursor is now placed on this line:</p>
+
+
+
+<table><tbody><tr><td><p>Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p></td></tr></tbody></table>
+
+
+
+<p>To delete multiple lines use, <strong>[count]dd</strong>.  Let's delete these lines:</p>
+
+
+
+<table><tbody><tr><td><p>Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p><p>right at the coast of the Semantics, a large language ocean.</p>
+</td></tr></tbody></table>
+
+
+
+<p>Notice that there are 3 lines in total.  One line begins with "Consonantia", the next with "right" and the third line is blank and doesn't have any text at all.  To delete those 3 lines, use <strong>3dd.</strong>  Now your cursor is placed on this line:</p>
+
+
+
+<table><tbody><tr><td><p>A small river named Duden flows by their place and supplies it with the</p></td></tr></tbody></table>
+
+
+
+<p>Delete the next three lines by using one keystroke.  Simply type a period and the previous command will be repeated.  When you press <strong>.</strong> the following three lines will be deleted:</p>
+
+
+
+<table><tbody><tr><td><p>A small river named Duden flows by their place and supplies it with the</p><p>necessary regelialia. It is a paradisematic country, in which roasted parts of</p><p>sentences fly into your mouth.</p></td></tr></tbody></table>
+
+
+
+
+
+<h4><strong>Save your work (or not!)</strong></h4>
+
+
+
+<p>If you want to save your changes and keep vim running, you can use <strong>:w&lt;ENTER&gt;</strong>.  To save your changes and immediately exit, type <strong>:wq&lt;ENTER&gt;</strong>.  If you want to abandon your changes, use <strong>:q!&lt;ENTER&gt;</strong>.  It's up to you.</p>
+
+
+
+<h4><strong>Your turn</strong></h4>
+
+
+
+<p>If you're up to it, have some fun deleting text in the file using what you know.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

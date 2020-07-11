@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>009 Exercise 02 Essential Navigation Commands</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Essential Navigation Commands</p>
+
+<h4><strong><em>Goal:</em></strong></h4>
+
+
+
+
+
+
+
+<p>The goal of this exercise is to practice moving around within a file. </p>
+
+
+
+
+
+<h4><strong><em>Instructions:</em></strong></h4>
+
+
+
+
+
+
+
+<h4><strong>Open the nav.txt file</strong></h4>
+
+
+
+
+
+
+
+<p>First, start a command line session on your local machine.  Next, use vim to open the "nav.txt" file that came in the course downloads.  To do that, navigate to the location of the file.  Remember this could be different for you depending on where you extracted the contents of the file.  This example assumes the course download was saved into your Downloads folder and extracted from there.</p>
+
+
+
+
+
+
+
+<table><tbody><tr><td><p>cd Downloads</p><p>cd vimclass</p><p>vim nav.txt</p></td></tr></tbody></table>
+
+
+
+
+
+
+
+<h4><strong>Practice moving the cursor by one line or one character</strong></h4>
+
+
+
+
+
+
+
+<p><img height="132" src="https://lh4.googleusercontent.com/KjPiGGN2yw-5u493PlFA1YPy-gRSN5P-jnepTxN4xnpdxIEJHiqT844Db6_nN2KXeeQRWQSyjRqGlHMdvs6qJgj8fbj_VON0mgslbeFHjU8b-L4rufL2xQIgJw2tXvqwwkeb0eim" width="302"></p>
+
+
+
+
+
+
+
+<p>Press the <strong>j</strong> key 10 times to move down 10 lines.  This will move you down to this line in the file:</p>
+
+
+
+
+
+
+
+<table><tbody><tr><td><p>You can also press and hold a navigation key so that it repeats.</p></td></tr></tbody></table>
+
+
+
+
+
+
+
+<p>Press the <strong>k</strong> 4 times to move up 4 lines.  This will move the cursor to the beginning of this line:</p>
+
+
+
+
+
+
+
+<table><tbody><tr><td><p>To move to the right, press "l".</p></td></tr></tbody></table>
+
+
+
+
+
+
+
+<p>Press the<strong> </strong><strong>l</strong> key 8 times to move to the word "to."</p>
+
+
+
+
+
+
+
+<p>Press the <strong>j</strong> key 2 times to move to this line:</p>
+
+
+
+
+
+
+
+<table><tbody><tr><td><p>To move to the left, press "h".</p></td></tr></tbody></table>
+
+
+
+
+
+
+
+<p>Notice how the cursor is in the same column.  (The cursor is the same distance from the left of the line as it was before.)</p>
+
+
+
+
+
+
+
+<p>Now move the cursor to the beginning of the line by pressing the <strong>h</strong> key to that it repeats.</p>
+
+
+
+
+
+
+
+<p>Finally, move the cursor to the very top of the file by pressing and holding the <strong>k</strong> key so that it repeats.</p>
+
+
+
+
+
+
+
+<h4><strong>Practice moving the cursor by page</strong></h4>
+
+
+
+
+
+
+
+<p>Press <strong>Ctrl-f</strong> to move down one page.</p>
+
+
+
+
+
+
+
+<p>Press <strong>Ctrl-b</strong> to move back up one page.</p>
+
+
+
+
+
+
+
+<p>Hold down the <strong>Ctrl</strong> key and press <strong>f </strong>as many times as needed to get to the bottom of the file.  The number of times you need to page down will vary based on the size of your screen.  Remember that the tildes represents lines beyond the end of the file.</p>
+
+
+
+
+
+
+
+<p>This is what it might look like when you get to the bottom of the file.  (Again, this will vary based on your screen size.)  Notice the tildes.</p>
+
+
+
+
+
+
+
+<table><tbody><tr><td><p>This training is being provided by LinuxTrainingAcademy.com.</p>
+<p>~</p><p>~</p><p>~</p><p>~</p><p>~</p><p>~</p><p>~</p><p>~</p></td></tr></tbody></table>
+
+
+
+
+
+
+
+<p>Move up one page by holding down the <strong>Ctrl</strong> key and pressing <strong>b</strong>.</p>
+
+
+
+
+
+
+
+<h4><strong>Practice moving the cursor by word</strong></h4>
+
+
+
+
+
+
+
+<p>Place your cursor at the beginning of the following line.  One easy way to do this would be to press and hold the <strong>k</strong> key until you reach the line.  If you go above it, return to the line by pressing <strong>j</strong>.</p>
+
+
+
+
+
+
+
+<table><tbody><tr><td><p>  Far far away, behind the wild mountains, far from the countries Vokalia and</p></td></tr></tbody></table>
+
+
+
+
+
+
+
+<p>Press lowercase <strong>w</strong> 4 times.  Your cursor will be at the first comma (,) in the line.  Press lowercase <strong>w</strong> 5 more times.  Your cursor will now be at the second command (,) in the line.</p>
+
+
+
+
+
+
+
+<p>Move back to the first word in the sentence (Far) by pressing the lowercase <strong>b</strong> key 8 times.  Notice how it also considers the comma to be a word.</p>
+
+
+
+
+
+
+
+<p>Now move forward to the word "behind" by pressing uppercase <strong>W</strong> 3 times.  Notice how your cursor does not stop at the comma.  Move forward to the word "far" by pressing uppercase <strong>W</strong> 4 more times.</p>
+
+
+
+
+
+
+
+<p>Return to the first word of the line by repeatedly pressing uppercase <strong>B</strong>.  You'll need to press <strong>B</strong> 7 times to do this.</p>
+
+
+
+
+
+
+
+<h4><strong>Practice moving the cursor to a specific line number</strong></h4>
+
+
+
+
+
+
+
+<p>Go to the first line in the file by typing <strong>gg</strong>.</p>
+
+
+
+
+
+
+
+<p>Go to the last line in the file by typing uppercase <strong>G</strong>.</p>
+
+
+
+
+
+
+
+<p>Go back to the first line by typing <strong>1gg</strong>.  Notice how it does the same thing as <strong>gg</strong>.  Now, go to line 29 by typing <strong>29gg</strong>.</p>
+
+
+
+
+
+
+
+<p>You can also use <strong>G</strong> to go to a specific line number.  Go to line 3 by typing <strong>3G</strong>.</p>
+
+
+
+
+
+
+
+<p>Now use line mode to move to line 44.  Type <strong>:44&lt;ENTER&gt;</strong>.  Now move to the last line in the file by typing <strong>:$&lt;ENTER&gt;</strong>.</p>
+
+
+
+
+
+
+
+<p>Confirm that you are indeed on line 44 by typing <strong>Ctrl-G</strong> and displaying information about the file you're editing.  (You should see 100% displayed on the status line.)</p>
+
+
+
+
+
+
+
+<h4><strong>Your turn</strong></h4>
+
+
+
+
+
+
+
+<p>If you're up to it, have some fun navigating around the file using what you know.</p>
+
+
+
+
+
+<h4><strong><strong>Quit vim</strong></strong></h4>
+
+
+
+
+
+<p><strong></strong></p>
+
+
+
+<p><strong></strong></p>
+
+<p><strong></strong></p><strong>
+
+<p>When you are done practicing your file navigation skills, quit with <strong>:q!&lt;ENTER&gt;</strong>.</p>
+
+
+
+
+
+</strong><p><strong></strong><br></p><p><strong></strong><br></p>
+
+<p><strong></strong></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

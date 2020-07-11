@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>032 Exercise 09 - Macros</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Macros</p>
+
+<h4><strong><em>Goal:</em></strong></h4>
+
+
+
+<p>The goal of this exercise is to practice creating and using macros.</p>
+
+<h4><strong><em>Instructions:</em></strong></h4>
+
+
+
+<h4><strong>Open the macros-practice.txt file</strong></h4>
+
+
+
+<p>First, start a command line session on your local machine.  Next, use vim to open the "macros-practice.txt" file that came in the course downloads.  To do that, navigate to the location of the file.  Remember this could be different for you depending on where you extracted the contents of the file.  This example assumes the course download was saved into your Downloads folder and extracted from there.</p>
+
+
+
+<table><tbody><tr><td><p>cd Downloads</p><p>cd vimclass</p><p>vim macros-practice.txt</p></td></tr></tbody></table>
+
+
+
+<h4><strong>Convert Old Python Code to New Python Code</strong></h4>
+
+
+
+<p>Let's say you have some old Python code (version 2.6 or earlier) that needs to be updated to work with the new Python interpreter (version 3.0 or later).  The print statement was replaced with the print() function.  That means you'll need to change the following line from this:</p>
+
+
+
+<p>Let's change the following line from this:</p>
+
+
+
+<table><tbody><tr><td><p>print "Macros are very fun!"</p></td></tr></tbody></table>
+
+
+
+<p>To this:</p>
+
+
+
+<table><tbody><tr><td><p>print("Macros are very fun!")</p></td></tr></tbody></table>
+
+
+
+<p>Let's do this with a macro.  By the way, it's not important to know anything about Python.  The goal here is to give you a practical example for you to practice your Vim macros skills with.</p>
+
+
+
+<p>Here is one way to accomplish this task: </p>
+
+
+
+<ul><li><p>Place your cursor on the line that reads:  print "Macros are very fun!"</p></li><li><p>Start recording into the <strong>"a</strong> register with <strong>qa</strong>.</p></li><li><p>Normalize your cursor position to the beginning of the line by typing <strong>0</strong>.</p></li><li><p>Position the cursor at the next space with <strong>f&lt;SPACE&gt;</strong>.</p></li><li><p>Replace the space with an opening parenthesis with <strong>r(</strong>.</p></li><li><p>Append a closing parenthesis to the line with <strong>A)</strong> and press <strong>&lt;ESCAPE&gt;</strong> to return to normal mode.</p></li><li><p>Now position the cursor on the next line with <strong>j</strong> so the macro can be easily repeated.</p></li><li><p>Finally type <strong>q</strong> to stop recording the macro.</p></li></ul>
+
+
+
+<p>You can examine the contents of your macro by looking at the <strong>"a</strong> register with <strong>:reg a&lt;ENTER&gt;</strong>.  Here is what it should look like:</p>
+
+
+
+<table><tbody><tr><td><p>"a   0f r(A)^[j</p></td></tr></tbody></table>
+
+
+
+<p>Play your macro on the next line by typing <strong>@a</strong>.  Use <strong>@@</strong> to repeat the macro on.  Continue repeating the macro with <strong>@@</strong> on the remaining print statements.</p>
+
+
+
+<p>NOTE: The solution provided above is not the only way to accomplish this task!  One simple example is replacing <strong>f&lt;SPACE&gt;</strong> with <strong>t"</strong> in the macro.  Both perform the same act of positioning the cursor under the space.  As long as you get the desired results you're after, that's all that matters.</p>
+
+
+
+<h4><strong>Create a Shell Script From a List</strong></h4>
+
+
+
+<p>Let's say you have a list of users and you want to perform the same set of actions on each of those users.  One way to accomplish this is to record a macro that performs the required command for one user and apply that macro to the rest of the list.</p>
+
+
+
+<p>The goal is to turn this text:</p>
+
+
+
+<table><tbody><tr><td><p>jason</p><p>sophia</p><p>jack</p><p>emma</p><p>ava</p></td></tr></tbody></table>
+
+
+
+<p>Into this:</p>
+
+
+
+<table><tbody><tr><td><p>passwd -l jason &amp;&amp; echo jason &gt;&gt; locked_users.txt</p><p>passwd -l sophia &amp;&amp; echo sophia &gt;&gt; locked_users.txt</p><p>passwd -l jack &amp;&amp; echo jack &gt;&gt; locked_users.txt</p><p>passwd -l emma &amp;&amp; echo emma &gt;&gt; locked_users.txt</p><p>passwd -l ava &amp;&amp; echo ava &gt;&gt; locked_users.txt</p></td></tr></tbody></table>
+
+
+
+<p>You could use those commands on a Linux system to lock each of the user accounts and add the account names to the locked_users.txt file.  Of course, it's not important what these commands do as we're interested in Vim, but I wanted to provide you with a practical example.</p>
+
+
+
+<p>Here is one way to accomplish this task: </p>
+
+
+
+<ul><li><p>Place your cursor on the line that contains "jason".</p></li><li><p>Start recording into the <strong>"b</strong> register with <strong>qb</strong>.</p></li><li><p>Yank the user name into the default register with <strong>yaw</strong>.</p></li><li><p>Start insert mode at the beginning of the line with <strong>I</strong>. Now type the text "passwd -l " and press <strong>&lt;ESCAPE&gt;</strong>.</p></li><li><p>Next, start insert mode at the end of the line with <strong>A</strong> and type " &amp;&amp; echo ".  Press <strong>&lt;ESCAPE&gt; </strong>to return to normal mode.</p></li><li><p>Next, paste the contents of the unnamed register after the cursor position with ###b</p><p>/b###.</p></li><li><p>Continue appending by typing <strong>a</strong>, and then typing " &gt;&gt; locked_users.txt" followed by <strong>&lt;ESCAPE&gt;</strong>.</p></li><li><p>Now position the cursor on the next line with <strong>j</strong> so the macro can be easily repeated.</p></li><li><p>Finally type <strong>q</strong> to stop recording the macro.</p></li></ul>
+
+
+
+<p>You can examine the contents of your macro by looking at the <strong>"b</strong> register with <strong>:reg b&lt;ENTER&gt;</strong>.  Here is what it should look like:</p>
+
+
+
+<table><tbody><tr><td><p>"b   yawIpasswd -l ^[A &amp;&amp; echo ^[pa &gt;&gt; locked_users.txt^[j</p></td></tr></tbody></table>
+
+
+
+<p>Play your macro on the next line by typing <strong>@b</strong>.  You can probably see that there are three more items in this list, so use <strong>3@b</strong> to repeat the macro four times.</p>
+
+<h4><strong><strong>Normalize Phone Numbers</strong></strong></h4>
+
+<p><strong></strong></p><strong>
+
+<p>Next, create a macro that changes a United States style phone number from:</p>
+
+
+
+<table><tbody><tr><td><p>2798265253</p></td></tr></tbody></table>
+
+
+
+<p>To:</p>
+
+
+
+<table><tbody><tr><td><p>(279) 826-5253</p></td></tr></tbody></table>
+
+
+
+
+
+<p>Here is one way to accomplish this task: </p>
+
+
+
+<ul><li><p>Place your cursor on the line that contains "2798265253".</p></li><li><p>Start recording into the <strong>"p</strong> register with <strong>qp</strong>.</p></li><li><p>Start insert mode at the beginning of the line with <strong>I</strong>.</p></li><li><p>Type an opening parenthesis <strong>(</strong> and press <strong>&lt;ESCAPE&gt;</strong> to return to normal mode.</p></li><li><p>Position the cursor under the 9 by typing <strong>l</strong> 3 times.</p></li><li><p>Type <strong>a</strong> to append text after the cursor and type <strong>)&lt;SPACE&gt;</strong>.  Press <strong>&lt;ESCAPE&gt;</strong> to return to normal mode.</p></li><li><p>Position the cursor under the 6 by typing <strong>l</strong> 3 times.</p></li><li><p>Type <strong>a-</strong> to append a hyphen and press <strong>&lt;ESCAPE&gt;</strong> to return to normal mode.</p></li><li><p>Now position the cursor on the next line with <strong>j</strong> so the macro can be easily repeated.</p></li><li><p>Finally type <strong>q</strong> to stop recording the macro.</p></li></ul>
+
+
+
+<p>You can examine the contents of your macro by looking at the <strong>"p</strong> register with <strong>:reg p&lt;ENTER&gt;</strong>.  Here is what it should look like:</p>
+
+
+
+<table><tbody><tr><td><p>"p   I(^[llla) ^[llla-^[j</p></td></tr></tbody></table>
+
+
+
+<p>Because there is a long list of phone numbers that scroll off the bottom of your screen you can't easily know how many times you need to apply the macro.  Also, repeating @@ could take quite awhile.  So, get the range you need to apply the macro to.  Turn on line numbering with <strong>:set nu&lt;ENTER&gt;</strong>.  Note that your cursor is currently on line 25.  Now page down to the end of the list of phone numbers with <strong>Ctrl-f</strong>.  You'll find the last phone number is on line 73.</p>
+
+
+
+<p>Execute the macro over this range using the <strong>normal</strong> command.  Type <strong>:25,73 normal @p&lt;ENTER&gt;</strong>. Now check that the macro was executed over that entire range by paging up with <strong>Ctrl-b</strong>.</p>
+
+
+
+<h4><strong>Extract Important Data from a Log File</strong></h4>
+
+
+
+<p>The next set of lines in the file contain system logs from a Linux server.  Specifically these lines are logs of blocked connection attempts by the local Linux firewall.  Your goal is to extract the timestamp, the source IP address of the connection attempt, and the destination port.</p>
+
+
+
+<p>The source IP address follows "SRC=".  Example: SRC=190.18.193.152</p>
+
+<p>The destination port follows "DPT=".  Example: DPT=23</p>
+
+
+
+<p>This line:</p>
+
+
+
+<table><tbody><tr><td><p>Jan 13 09:57:01 www1 kernel: [3947771.808744] [BLOCK] IN=eth0 OUT= MAC=e6:e9:2d:04:b6:95:3c:8a:b0:0d:6f:f0:08:00 SRC=190.18.193.152 DST=2.5.9.1 LEN=40 TOS=0x02 PREC=0x00 TTL=51 ID=25120 PROTO=TCP SPT=12502 DPT=23 WINDOW=4078 RES=0x00 SYN URGP=0</p></td></tr></tbody></table>
+
+
+
+<p>Will be narrowed down to just this comma separated value line:</p>
+
+
+
+<table><tbody><tr><td><p>Jan 13 09:57:01,190.188.193.152,23</p></td></tr></tbody></table>
+
+
+
+<p>Here is one way to accomplish this task: </p>
+
+
+
+<ul><li><p>Place your cursor on the line that starts with "Jan 13 09:57:01".</p></li><li><p>Start recording into the <strong>"l</strong> register with <strong>ql</strong>.</p></li><li><p>Normalize your cursor position to the beginning of the line by typing <strong>0</strong>.</p></li><li><p>Position your cursor on the space just after the time stamp by typing <strong>tw</strong>.</p></li><li><p>Now delete all the text up to "SRC=".  You can do this with <strong>dtS</strong>.</p></li><li><p>Now delete SRC with <strong>dw</strong>.</p></li><li><p>Next, replace "=" with a comma: <strong>r,</strong>.</p></li><li><p>Position the cursor after the IP address with <strong>f&lt;SPACE&gt;</strong>.</p></li><li><p>Delete the text up to "DPT=" with <strong>d/DPT&lt;ENTER&gt;</strong>.</p></li><li><p>Now delete DPT with <strong>dw</strong>.</p></li><li><p>Next, replace "=" with a comma: <strong>r,</strong>.</p></li><li><p>Position the cursor after the port number with <strong>f&lt;SPACE&gt;</strong>.</p></li><li><p>Delete the remaining text on the line with <strong>D</strong>.</p></li><li><p>Now position the cursor on the next line with <strong>j</strong> so the macro can be easily repeated.</p></li><li><p>Finally type <strong>q</strong> to stop recording the macro.</p></li></ul>
+
+
+
+<p>You can examine the contents of your macro by looking at the <strong>"l</strong> register with <strong>:reg l&lt;ENTER&gt;</strong>.  Here is what it should look like:</p>
+
+
+
+<table><tbody><tr><td><p>"l   0twdtSdwr,f d/DPT^Mdwr,f Dj</p></td></tr></tbody></table>
+
+
+
+<p>As always, there are other ways to accomplish the same task.  Just one simple example is using <strong>2cw,&lt;ESCAPE&gt;</strong> to change "SRC=" to "," instead of using <strong>dwr,</strong>.  Take a moment and think of other ways to alter this macro and get the same result.</p>
+
+
+
+<p>Test your macro on the next line by typing <strong>@l</strong>.  If it looks correct, continue with <strong>@@</strong> until all the lines are in the desired format.</p>
+
+
+
+<h4><strong>Condense Data From Multiple Lines Into a Single Line</strong></h4>
+
+
+
+<p>Remember that macros are just a series of recorded keystrokes.  Even though you've been working on macros that manipulate single lines, you can as easily manipulate multiple lines.  Let's say you want to turn these three lines into one line.</p>
+
+
+
+<p>Before:</p>
+
+
+
+<table><tbody><tr><td><p>Country China</p><p>1,380,950,000 people</p>
+</td></tr></tbody></table>
+
+
+
+<p>After:</p>
+
+
+
+<table><tbody><tr><td><p>1,380,950,000;China</p></td></tr></tbody></table>
+
+
+
+<p>Here is one way to accomplish this task: </p>
+
+
+
+<ul><li><p>Place your cursor on the line that reads "Country China".</p></li><li><p>Start recording into the <strong>"c</strong> register with <strong>qc</strong>.</p></li><li><p>Normalize your cursor position to the beginning of the line by typing <strong>0</strong>.</p></li><li><p>Delete the word "Country" with <strong>dw</strong>.</p></li><li><p>Move to the line below with <strong>j</strong>.</p></li><li><p>Cut the number into the unnamed register with <strong>dW</strong>.</p></li><li><p>Move up to the original line with <strong>k</strong>.</p></li><li><p>Paste the number before your cursor position with ###b</p><p>/b###.</p></li><li><p>Replace the space with a semicolon by typing <strong>r;</strong>.</p></li><li><p>Move to the line below with <strong>j</strong>.</p></li><li><p>Delete the current line and the next line with <strong>2dd</strong>.</p></li><li><p>Finally type <strong>q</strong> to stop recording the macro.</p></li></ul>
+
+
+
+<p>You can examine the contents of your macro by looking at the <strong>"c</strong> register with <strong>:reg c&lt;ENTER&gt;</strong>.  Here is what it should look like:</p>
+
+
+
+<table><tbody><tr><td><p>"c   0dwjdWkPr;j2dd</p></td></tr></tbody></table>
+
+
+
+<p>Now use a count to repeat the macro 4 more times to format the rest of the data in this set.  Type <strong>4@c</strong>.</p>
+
+
+
+<p>As always, there are multiple ways to achieve the same result in Vim.</p>
+
+
+
+<h4><strong>Extract Data from HTML</strong></h4>
+
+
+
+<p>Here are a list of links (&lt;a&gt; tags) on a single line of HTML.</p>
+
+
+
+<table><tbody><tr><td><p>&lt;a href="#"&gt;@armyspy.com&lt;/a&gt;&lt;a href="#"&gt;@cuvox.de&lt;/a&gt;&lt;a href="#"&gt;@dayrep.com&lt;/a&gt;&lt;a href="#"&gt;@einrot.com&lt;/a&gt;&lt;a href="#"&gt;@fleckens.hu&lt;/a&gt;&lt;a href="#"&gt;@gustr.com&lt;/a&gt;&lt;a href="#"&gt;@jourrapide.com&lt;/a&gt;&lt;a href="#"&gt;@rhyta.com&lt;/a&gt;&lt;a href="#"&gt;@superrito.com&lt;/a&gt;&lt;a href="#"&gt;@teleworm.us&lt;/a&gt;</p></td></tr></tbody></table>
+
+
+
+<p>The goal is convert those links to the following:</p>
+
+
+
+<table><tbody><tr><td><p>armyspy.com</p><p>cuvox.de</p><p>dayrep.com</p><p>einrot.com</p><p>fleckens.hu</p><p>gustr.com</p><p>jourrapide.com</p><p>rhyta.com</p><p>superrito.com</p><p>teleworm.us</p></td></tr></tbody></table>
+
+
+
+<p>Here is one way to accomplish this task: </p>
+
+
+
+<ul><li><p>Place your cursor at the beginning of the line that starts with "&lt;a".</p></li><li><p>Start recording into the <strong>"q</strong> register with <strong>qq</strong>.</p></li><li><p>Delete the text up to and including "@" with <strong>df@</strong>.</p></li><li><p>Position the cursor under the "&lt;" with <strong>f&lt;</strong>.</p></li><li><p>Replace "&lt;/a&gt;" with <strong>&lt;ENTER&gt;</strong> by typing <strong>cf&gt;&lt;ENTER&gt;&lt;ESCAPE&gt;</strong>.</p></li><li><p>Finally type <strong>q</strong> to stop recording the macro.</p></li></ul>
+
+
+
+<p>You can examine the contents of your macro by looking at the <strong>"q</strong> register with <strong>:reg q&lt;ENTER&gt;</strong>.  Here is what it should look like:</p>
+
+
+
+<table><tbody><tr><td><p>"q   df@f&lt;cf&gt;^M^[</p></td></tr></tbody></table>
+
+
+
+<p>Execute the macro with <strong>@q</strong>.  Keep repeating the macro with <strong>@@</strong> until you are left with the desired text.</p>
+
+
+
+<h4><strong>Exit out of vim</strong></h4>
+
+
+
+<p>If you want to abandon your changes so you can try this practice exercise again, use <strong>:q!&lt;ENTER&gt;</strong>.</p>
+
+
+
+</strong><p><strong></strong></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
