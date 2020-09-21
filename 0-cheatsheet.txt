@@ -1,0 +1,8 @@
+Cheatsheet
+
+**** Substitute **** 
+:-12,-10s/;$/. - Replace all ending ';' with '.' on relative range from 12 to 10
+-12,-10 - from -12 line to -10
+s/ - substitute command
+;$/ - ';' symbol at the end of line ($)
+. - replace by .
